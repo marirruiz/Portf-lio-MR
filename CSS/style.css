@@ -7,6 +7,17 @@
     --text-black-700: #504e70; 
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body.dark {
     --bg-black-900: #151515;
     --bg-black-100: #222222;
@@ -140,7 +151,7 @@ ul {
 }
 
 .btn {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     padding: 12px 35px;
     color: white;
@@ -440,57 +451,6 @@ h3.minha-profissao {
     margin-top: 10px;
 }
 
-.about .about-content .skills {
-    flex: 0 0 40%;
-    max-width: 40%;
-    margin-top: 40px;
-    border-radius: 10px;
-    padding: 30px 15px;
-}
-
-.about .about-content .skills .skill-item {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.about .about-content .skills .skill-item h5 {
-    line-height: 40px;
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--text-black-900);
-    text-transform: capitalize;
-}
-
-.about .about-content .skills .skill-item .progress {
-    background-color: var(--bg-black-50);
-    height: 7px;
-    border-radius: 4px;
-    width: 100%;
-    position: relative;
-}
-
-.about .about-content .skills .skill-item {
-    margin-bottom: 25px;
-}
-
-.about .about-content .skills .skill-item .progress .progress-in {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    border-radius: 4px;
-    background-color: var(--skin-color);
-}
-
-.about .about-content .skills .skill-item .skill-percent {
-    position: absolute;
-    right: 0;
-    color: var(--text-black-900);
-    top: -40px;
-    font-weight: 400;
-    line-height: 40px;
-}
-
 .about .about-content .education,
 .about .about-content .experience {
     flex: 0 0 50%;
@@ -498,9 +458,10 @@ h3.minha-profissao {
     margin-top: 30px;
 }
 
-.about .about-content .h3.title {
+.about .about-content h3 {
     font-size: 24px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 5px;
     font-weight: 700;
     color: var(--text-black-900);
 }
@@ -509,7 +470,7 @@ h3.minha-profissao {
     flex: 0 0 100%;
     max-width: 100%;
     border-radius: 10px;
-    padding: 30px 15px;
+    padding: 15px 15px;
 }
 
 .about .about-content .timeline {
